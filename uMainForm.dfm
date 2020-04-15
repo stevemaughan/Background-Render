@@ -1,0 +1,47 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 448
+  ClientWidth = 707
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PaintBox1: TPaintBox
+    AlignWithMargins = True
+    Left = 185
+    Top = 10
+    Width = 512
+    Height = 428
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Align = alClient
+    OnPaint = PaintBox1Paint
+    ExplicitWidth = 507
+    ExplicitHeight = 423
+  end
+  object ColorListBox1: TColorListBox
+    AlignWithMargins = True
+    Left = 10
+    Top = 10
+    Width = 155
+    Height = 428
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Align = alLeft
+    TabOrder = 0
+    OnClick = ColorListBox1Click
+  end
+end
